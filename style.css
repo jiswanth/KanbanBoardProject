@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.bg-image{
+    background-image: url("https://media.istockphoto.com/id/1313113103/photo/african-american-woman.jpg?b=1&s=612x612&w=0&k=20&c=LqKnt2efRva-lxudgvPr_MVu4-c7bfpn495w66QnEQM=");
+    background-size: cover;
+    height: 100vh;
+}
+.kantext{
+    color:aquamarine;
+    display:flex;
+    margin-left: 900px;
+    font-weight: 100;
+    font-size: large;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+
+}
+.toolbox-cont{
+    display: flex;
+    background-color: gray; 
+    height:5rem;
+    align-items: center; 
+    cursor: pointer; 
+}
+
+.toolbox-filter-colors{
+    display: flex;
+    background-color: bisque;
+    height: 3.5rem;
+    width:18rem;
+    align-items: center;
+    margin-left: 20px;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.color-box{
+    height: 1.5rem;
+    width: 3rem;
+    border-radius: 0.25rem; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    transition: transform 0.2s ease; /* Hover animation */
+}
+.color-box:hover {
+    transform: scale(1.1); /* Enlarge slightly on hover */
+}
+
+.lightpink{
+    background-color: lightpink;
+}
+.lightgreen{
+    background-color: lightgreen;
+}
+.lightblue{
+    background-color:lightblue;
+}
+.black{
+    background-color: black;
+}
+
+.action-btn-cont{
+    display: flex;
+    background-color: bisque;
+    height: 3.5rem;
+    width: 6rem;
+    margin-left: 4rem;
+    align-items: center;
+    border-radius: 0.5rem; /* Rounded corners */
+    overflow: hidden; /* Ensure buttons don't overflow */
+}
+.action-btn-cont>*{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem; /* Slightly adjust size for better spacing */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add hover transition */
+}
+.action-btn-cont > *:hover {
+    background-color: #505050; /* Highlight on hover */
+}
+
+/* Modal Design */
+.modal-cont{
+    height: 50vh;
+    width:45vw;
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    border-radius: 0.5rem; /* Smooth corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    overflow: hidden; /* Prevent overflow */
+}
+.priority-color-cont{
+    height: 100%;
+    width: 30%;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    padding: 1rem 0; /* Add padding for spacing */
+}
+.text-area{
+    height: 100%;
+    width: 70%;
+    font-size: 40px;
+    resize: none;
+    border:none;
+    outline: none;
+    background-color: #dfe4ea;
+    padding: 1rem; /* Add padding for text */
+    line-height: 1.5; /* Improve readability */
+}
+.priority-color{
+    height: 3rem;
+    width:5rem;
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* Ticket design */
+
+.main-cont{
+    display: flex;
+    gap:2rem;
+    justify-content: center;
+    /* margin-top: 2rem; */
+}
+
+.ticket-cont{
+    height: 12rem;
+    width: 15rem;
+    background-color: coral;
+    border-radius: 0.5rem; /* Smooth corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.ticket-color{
+    /* background-color: black; */
+    height: 1.5rem;
+}
+.ticket-id{
+    background-color: yellow;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold; /* Highlight ticket ID */
+    font-size: 1rem; /* Adjust text size */
+}
+.ticket-lock{
+    display: flex ;
+    justify-content: flex-end;
+    margin-top:90px;
+    margin-right:5px;
+    font-size:1.5rem;
+}
+.active{
+    border: 3px solid red;
+    box-shadow: 0 0 6px red; /* Add glowing effect */
+}
